@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="flex" id="output">
+            <div id="password">Generate Your Password</div>
+            <i id="cpy" class='bx bx-copy'></i>
+        </div>
+        <div class="flex" id="size">
+            <input type="range" min="6" max="18" value="8" id="scaleSize">
+            <P id="passSize"></P>
+        </div>
+        <div id="options">
+            <input type="checkbox" id="uprcse">UPPERCASE <br>
+            <input type="checkbox" id="lwrcse">LOWERCASE <br>
+            <input type="checkbox" id="num">NUMBERS <br>
+            <input type="checkbox" id="symbl">SYMBOLS <br>
+        </div>
+        <button id="btn">Generate Password</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
